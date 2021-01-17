@@ -1,0 +1,56 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.header {
+    color: #ffffff;
+    background-color: rgb(120, 211, 180);
+    box-sizing: border-box;
+    padding: 100px;
+}
+.scroll__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5%;
+}
+.scroll--animation {
+    width: 23%;
+    height: 300px;
+    background-color: #09c;
+    box-sizing: border-box;
+    padding: 3%;
+    margin: 0 0 2.5vw;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.scroll--animation.show {
+    opacity: 1;
+    transform: none;
+}
+/* scroll animation */
+.sa-lr {
+    transform: translate(-100px, 0);
+}
+.sa-rl {
+    transform: translate(100px, 0);
+}
+.sa-up {
+    transform: translate(0, 100px);
+}
+.sa-down {
+    transform: translate(0, -100px);
+}
+.sa-scaleUp {
+    transform: scale(.5);
+}
+.sa-scaleDown {
+    transform: scale(1.5);
+}
+.sa-rotateL {
+    transform: rotate(180deg);
+}
+.sa-rotateR {
+    transform: rotate(-180deg);
+}
