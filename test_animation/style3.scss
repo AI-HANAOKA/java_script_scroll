@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+}
+//---------------------------mixin---------------------------
+@mixin flex () {
+  display: flex;
+}
+@mixin direction ($direction: row) {
+  flex-direction: $direction;
+}
+@mixin align ($align: flex-start) {
+  align-items: $align;
+}
+@mixin justify ($justify: flex-start) {
+  justify-content: $justify;
+}
+/* ---------------------------scroll animation--------------------------- */
+/* ---------------------------body--------------------------- */
+body {
+  background-color: rgb(245, 240, 240);
+}
+/* ---------------------------header--------------------------- */
+.header {
+  width: 100vw;
+  height: 30vh;
+  color: rgb(134, 100, 56);
+  font-size: 50px;
+  background-color: rgb(255, 211, 169);
+  margin-bottom: 100px;
+  @include flex
+  @include direction(row)
+  @include align (center)
+  @include justify (center)
+}
+/* ---------------------------box1--------------------------- */
+.box1 {
+  width: 100vw;
+  padding-bottom: 100px;
+  @include flex
+  @include direction(row)
+  @include align (center)
+  @include justify (space-between)
+  &__backImg {
+    width: 70vw;
+    height: 800px;
+    background-color: pink;
+    position: relative;
+    z-index: 0;
+    left: 0px;
+  }
+  // &__img {
+  //   width: 100%;
+  // }
+  &__textBox {
+    max-width: 700px;
+    min-height: 600px;
+    color: #fff;
+    font-size: max(18px);
+    letter-spacing: 1px;
+    background-color: rgba(207, 109, 96, 0.637);
+    border-radius: 5%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    right: 80px;
+  }
+  &__title {
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding: 25px 0px 0px 50px;
+  }
+  &__text1,
+  &__text3 {
+    padding: 20px;
+  }
+  &__text2 {
+    padding:0px 20px;
+  }
+}
+/* ---------------------------box2--------------------------- */
+.box2 {
+  width: 100vw;
+  background-color: white;
+  padding: 100px 0px;
+  @include flex
+  @include direction(column)
+  @include align (center)
+  @include justify (center)
+  &__imgBox {
+    width: 75vw;
+    padding-bottom: 50px;
+    @include flex
+    @include direction(row)
+    @include align (center)
+    @include justify (space-between)
+  }
+  &__box {
+      width: 15vw;
+      height: 400px;
+      background-color: pink;
+      box-sizing: border-box;
+  }
+  &__textBox {
+    width: 75vw;
+    color: rgb(134, 100, 56);
+    @include flex
+    @include direction(column)
+    @include align (center)
+    @include justify (center)
+  }
+  &__title {
+    padding: 0px 0px 25px;
+    @extend .box1__title;
+  }
+  &__text {
+    font-size: max(18px);
+    letter-spacing: 1px;
+  }
+}
+/* ---------------------------footer--------------------------- */
+.footer {
+  margin-bottom: 0px;
+  @extend .header;
+}
