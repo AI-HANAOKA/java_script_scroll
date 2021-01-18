@@ -1,0 +1,40 @@
+.main{
+	position: absolute;
+	top: 2000px;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(221, 221, 221);
+	transform: translateX(-50%);
+}
+
+/* 要素の設定 */
+.scroll{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	margin: 20px auto;
+	background-color: pink;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(100px);
+	transition: all 1s;
+}
+
+.scroll:nth-of-type(n+2){
+	margin-top: 50px;
+}
+
+.scroll__text{
+	font-size: 18px;
+	color: #fff;
+}
+
+/* 画面領域に差し掛かった時に付与するクラス */
+.js-fade{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
