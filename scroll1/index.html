@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>java script scroll test</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="header__title">HEADER</h1>
+	</header>
+
+	<!-- <section class="scroll__box">
+		<div class="sa sa-up" data-sa_margin="0">1</div>
+		<div class="sa sa-up" data-sa_margin="100">2</div>
+		<div class="sa sa-up" data-sa_margin="200">3</div>
+		<div class="sa sa-up" data-sa_margin="300">4</div>
+		<div class="sa sa-up" data-sa_margin="400">5</div>
+		<div class="sa sa-up" data-sa_margin="500">6</div>
+		<div class="sa sa-up" data-sa_margin="600">7</div>
+		<div class="sa sa-up" data-sa_margin="700">8</div>
+	</section> -->
+	<section class="scroll__box">
+		<div class="sa sa-up">1</div>
+		<div class="sa sa-up" data-sa_delay="200">2</div>
+		<div class="sa sa-up" data-sa_delay="400">3</div>
+		<div class="sa sa-up" data-sa_delay="600">4</div>
+		<div class="sa sa-up" data-sa_delay="600">5</div>
+		<div class="sa sa-up" data-sa_delay="400">6</div>
+		<div class="sa sa-up" data-sa_delay="200">7</div>
+		<div class="sa sa-up">8</div>
+	</section>
+	<section class="scroll__box">
+		<div class="sa sa-lr" id="elm9">9</div>
+		<div class="sa sa-rl">10</div>
+		<div class="sa sa-up" data-sa_trigger="#elm9">11</div>
+		<div class="sa sa-down" data-sa_trigger="#elm9">12</div>
+		<div class="sa sa-scaleUp" data-sa_trigger="#elm15">13</div>
+		<div class="sa sa-scaleDown" data-sa_trigger="#elm15">14</div>
+		<div class="sa sa-rotateL" id="elm15">15</div>
+		<div class="sa sa-rotateR">16</div>
+	</section>
+	<script src="./mein.js"></script>
+</body>
+
+</html>
