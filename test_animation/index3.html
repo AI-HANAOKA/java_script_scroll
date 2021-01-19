@@ -11,9 +11,9 @@
     <h1 class="header__title">HEADER</h1>
   </header>
   <section class="box1">
-    <div class="box1__backImg">
+    <div class="box1__backImg scroll scroll--lr">
     </div>
-    <div class="box1__textBox">
+    <div class="box1__textBox scroll scroll--up">
       <h2 class="box1__title">TITLE</h2>
       <p class="box1__text1">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, nulla? Sequi, repudiandae expedita? Nemo aspernatur harum nihil, nobis sequi odio praesentium ullam distinctio cumque at blanditiis vel modi unde ipsa.
@@ -27,19 +27,15 @@
     </div>
   </section>
   <section class="box2">
-    <div class="box2__imgBox">
-      <div class="box2__box"></div>
-      <div class="box2__box"></div>
-      <div class="box2__box"></div>
-      <div class="box2__box"></div>
-      <img src="" alt="" class="box2__img">
-      <img src="" alt="" class="box2__img">
-      <img src="" alt="" class="box2__img">
-      <img src="" alt="" class="box2__img">
+    <div class="box2__imgBox" id="imgBox" data-scroll_margin="150">
+      <div class="box2__box scroll scroll--up" data-scroll_trigger="#imgBox"></div>
+      <div class="box2__box scroll scroll--up" data-scroll_delay="200" data-scroll_trigger="#imgBox"></div>
+      <div class="box2__box scroll scroll--up" data-scroll_delay="200" data-scroll_trigger="#imgBox"></div>
+      <div class="box2__box scroll scroll--up" data-scroll_trigger="#imgBox"></div>
     </div>
     <div class="box2__textBox">
-      <h2 class="box2__title">TITLE</h2>
-      <p class="box2__text">
+      <h2 class="box2__title scroll">TITLE</h2>
+      <p class="box2__text scroll" data-scroll_delay="150">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque amet praesentium enim cumque molestiae blanditiis nostrum expedita, mollitia, totam, dolore consequatur odio vero veniam error iure cum fugit perspiciatis quae.
         <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic iusto ullam dolores similique nulla a facere consequatur unde? Cumque non fuga ipsum unde officia. Ullam vel necessitatibus omnis exercitationem laborum.
         <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic iusto ullam dolores similique nulla a facere consequatur unde? Cumque non fuga ipsum unde officia. Ullam vel necessitatibus omnis exercitationem laborum.
@@ -53,5 +49,6 @@
   </footer>
 
   <script src="./main3.js"></script>
+  <!-- <script src="../scroll2/main2.js"></script> -->
 </body>
 </html>

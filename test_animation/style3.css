@@ -3,7 +3,32 @@
 }
 
 /* ---------------------------scroll animation--------------------------- */
-/* ---------------------------body--------------------------- */
+.scroll {
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.scroll.show {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.scroll--lr {
+  -webkit-transition: all 2.5s ease-in-out;
+  transition: all 2.5s ease-in-out;
+  -webkit-transform: translate(-1000px, 0px);
+          transform: translate(-1000px, 0px);
+}
+
+.scroll--up {
+  -webkit-transform: translate(0px, 200px);
+          transform: translate(0px, 200px);
+}
+
+/* 
+---------------------------body--------------------------- */
 body {
   background-color: #f5f0f0;
 }
@@ -121,9 +146,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .box2__box {
@@ -132,6 +157,7 @@ body {
   background-color: pink;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0px 15px;
 }
 
 .box2__textBox {

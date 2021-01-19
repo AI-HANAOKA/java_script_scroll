@@ -23,7 +23,7 @@ const scrollEvent = function() {
     const scrollValue = window.pageYOffset;
     const scrollEle = document.querySelectorAll(".scroll");
     const windowHeight = window.innerHeight;
-    const value = 100;
+    const value = 200;
 
     for (let a = 0; a < scrollEle.length; a++) {
       // 取得した要素のtop値の取得 + スクロール量

@@ -15,7 +15,23 @@
   justify-content: $justify;
 }
 /* ---------------------------scroll animation--------------------------- */
-/* ---------------------------body--------------------------- */
+.scroll {
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+}
+.scroll.show {
+  opacity: 1;
+  transform: none;
+}
+.scroll--lr {
+  transition: all 2.5s ease-in-out;
+  transform: translate(-1000px, 0px);
+}
+.scroll--up {
+  transform: translate(0px, 200px);
+}
+/* 
+---------------------------body--------------------------- */
 body {
   background-color: rgb(245, 240, 240);
 }
@@ -92,13 +108,14 @@ body {
     @include flex
     @include direction(row)
     @include align (center)
-    @include justify (space-between)
+    @include justify (center)
   }
   &__box {
       width: 15vw;
       height: 400px;
       background-color: pink;
       box-sizing: border-box;
+      margin: 0px 15px;
   }
   &__textBox {
     width: 75vw;
